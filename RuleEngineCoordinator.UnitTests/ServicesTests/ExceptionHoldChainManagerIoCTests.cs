@@ -19,6 +19,7 @@ namespace RuleEngineCoordinator.UnitTests.ServicesTests
             var resolved = container.Resolve<IChainManager<OrderChainModel>>();
             var links = resolved.Links;
 
+
             Assert.IsTrue(links.Count == 2);
 
             Assert.IsTrue(links.Any(o => o.GetType().Equals(typeof(OrderStep1))));
