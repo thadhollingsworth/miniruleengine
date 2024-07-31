@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RuleEngineCoordinator.UnitTests</RootNamespace>
     <AssemblyName>RuleEngineCoordinator.UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,10 +77,6 @@
     <ProjectReference Include="..\Domain\RuleEngineCoordinator.Domain.csproj">
       <Project>{e1ebca33-1cb5-4c48-a6a6-020e6c24516b}</Project>
       <Name>RuleEngineCoordinator.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RuleEngineCoordingator\RuleEngineCoordinator.csproj">
-      <Project>{678ED683-70CE-447A-B12B-359FA499C618}</Project>
-      <Name>RuleEngineCoordinator</Name>
     </ProjectReference>
     <ProjectReference Include="..\Services\RuleEngineCoordinator.Services.csproj">
       <Project>{2f6039be-e047-42c5-9179-8ae56ac6fe99}</Project>
